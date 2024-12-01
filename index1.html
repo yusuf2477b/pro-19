@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body{
+        background-color: aqua;
+    }
+</style>
+<body>
+    <h1>Calculator</h1>
+    <label>Enter first value </label>
+    <input type="number" id="no1">
+    <br><br>
+    <label>Enter second value</label>
+    <input type="number" id="no2">
+    <br>
+    <p id="result"></p>
+    <br>
+    <button id="add" onclick="add()">Add</button>
+    <button id="sub" onclick="sub()">Subtract</button>
+    <button id="mul" onclick="mul()">Multiply</button>
+    <button id="divide" onclick="divide()">Divide</button>
+
+    <script>
+       function add(){
+                var result=Number(document.getElementById("no1").value ) + Number(document.getElementById("no2").value);
+                document.getElementById("result").innerHTML=result;
+        }
+        function sub(){
+                var result=Number(document.getElementById("no1").value ) - Number(document.getElementById("no2").value);
+                document.getElementById("result").innerHTML=result;
+        }
+        function mul(){
+                var result=Number(document.getElementById("no1").value ) * Number(document.getElementById("no2").value);
+                document.getElementById("result").innerHTML=result;
+        }
+        function divide(){
+                var result=Number(document.getElementById("no1").value ) / Number(document.getElementById("no2").value);
+                document.getElementById("result").innerHTML=result;
+        }
+        
+    </script>
+</body>
+</html>
